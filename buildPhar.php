@@ -1,6 +1,6 @@
 <?php
 $buildDir = __DIR__ . '/WebPHPUnit';
-$targetFile = __DIR__ . '/WebPHPUnit.phar';
+$targetFile = __DIR__ . '/build/WebPHPUnit.phar';
 $phar = new Phar($targetFile, FilesystemIterator::CURRENT_AS_FILEINFO | FilesystemIterator::KEY_AS_FILENAME,
     'WebPHPUnit.phar');
 $phar->startBuffering();
